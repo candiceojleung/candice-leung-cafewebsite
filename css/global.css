@@ -21,7 +21,7 @@ li{
 
 .nav-left{
     display:flex; 
-    /* align-items:baseline;  */
+    align-items:baseline; 
 }
 .nav-left__icon--size, .social__icons--size,.info__icon {
     width:3.125rem;

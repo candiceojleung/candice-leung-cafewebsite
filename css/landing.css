@@ -156,18 +156,18 @@ footer{
     justify-content:space-between;
 }
 
-.info-images__can{
+.learn-more__can{
     height:280px;
     position:relative;
     bottom:20px;
     left:250px;
 }
 
-.info-images__background{
+.learn-more__background{
     width:400px;
 }
 
-.info-images__border{
+.learn-more__border{
     border:5px solid #5BACC3;
     width:400px;
     height:400px;
@@ -197,4 +197,9 @@ footer{
 
 .discount .discount__description--bold , .hours .hours__day--bold{
     font-weight:700;
+}
+
+.footer-logo-left, .footer-logo-right{
+    width:120px;
+    opacity:25%; 
 }
