@@ -1,0 +1,91 @@
+h2{
+   font-size: 3.75rem;
+   font-weight:300; 
+}
+
+h3{
+    font-size:2.0625rem;
+    font-weight:300;
+    text-align:center;
+}
+
+.hero-image{
+    background-image:url("../assets/images/coffee-circle.jpg");
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:44rem;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+.hero-image__title{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:3.75rem;
+    font-weight:300;
+    width:18.75rem;
+    height:12.5rem;
+    color:#fff;
+    background-color:#393939;
+    padding: 5px 50px;
+}
+
+.hero-image__border{
+    border: 5px solid #5BACC3;
+    width:18.75rem;
+    height:12.5rem;
+    position:relative; 
+    
+}
+
+.navbar{
+    color:#FFF;
+    background-color:#393939;
+    width:100%;
+}
+
+
+.navbar__list{
+    text-align:center; 
+}
+
+.navbar__item{    
+    padding: 2px 16px;
+    margin: 15px 0;
+    border-left: 5px solid #5BACC3; 
+}
+
+.navbar__links{
+    font-size:1.3125rem;
+    font-weight:400;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:#FFF;
+}
+
+.items{
+    background-color:#FFF0ED;
+    margin:auto;
+    text-align:center;
+}
+
+.items__title{
+    padding:30px;
+}
+
+.items__description--italic{
+    font-size:1.125rem;
+    font-weight:400;
+    font-style:italic;
+    text-align:center;
+    width:31.25rem;
+    margin:auto;
+}
+
+.cold{
+    background-color:#F7F7F7;
+}
