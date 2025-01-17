@@ -1,6 +1,5 @@
-h3{
-    padding: 1.25rem 0; 
-}
+@use './partials/global' as *;
+@use './partials/keyframes' as*;
 
 footer{
     display: flex;
@@ -33,12 +32,14 @@ footer{
     display:flex;
     flex-direction:column;
     align-items:center;
+    gap:3.125rem;
 }
 
 .product__cards{
+    width:100%;
     display:flex;
-    gap: 4rem;
-    margin:3.125rem;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
 }
  
 .product__card{                      
@@ -66,6 +67,7 @@ footer{
     display:flex;
     justify-content:space-around;
     align-items:center;
+    padding-top:20px;
 }
 
 .bottom-card__left{
@@ -123,6 +125,10 @@ footer{
     right:3.75rem;
 }
 
+.content-images__background:hover .content-images__can{
+    animation: spin 2s infinite; 
+}
+
 .content-images__can{
     height:17.5rem;
     position:relative; 
@@ -130,6 +136,10 @@ footer{
     top:6.25rem;
     z-index:2
 }
+.content-images__can:hover{
+    animation: spin 2s infinite; 
+}
+
 
 .content-images__border{
     border:5px solid #5BACC3;
@@ -156,6 +166,7 @@ footer{
     color:#fff; 
     padding: 3.125rem;
     margin-bottom:12.5rem;
+    animation:banner-change 2.5s infinite alternate;
 }
 
 .discount .discount__description--bold , .hours .hours__day--bold{
