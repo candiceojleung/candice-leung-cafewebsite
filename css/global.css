@@ -23,11 +23,9 @@ h3{
     font-weight:300;
 }
 
-
 ul{
     list-style:none;
 }
-
 
 .navheader__link , .navheader__links:visited {
     color:#393939;
@@ -64,7 +62,7 @@ ul{
     font-weight:400;
     text-transform:uppercase;
     text-decoration:none;
-    margin:32px;
+    margin:2rem;
     color:#393939
 }
 
@@ -77,12 +75,12 @@ ul{
     font-size:1.125rem;
     font-weight:400;
     color: #5BACC3;
-    padding-bottom:25px;
+    padding-bottom:1.5625rem;
 }
 
 .info-button__background{
-    height:50px;
-    width:180px;
+    height:3.125rem;
+    width:11.25rem;
     text-align:center;
     background-color:#5BACC3;
 }
@@ -91,12 +89,12 @@ ul{
     display:flex;
     justify-content:center;
     align-items:center;
-    border: 2px solid black;
-    height:50px;
-    width:180px;
+    border: 0.125rem solid black;
+    height:3.125rem;
+    width:11.25rem;
     position:relative; 
-    bottom:55px; 
-    right:5px;
+    bottom:3.4375rem; 
+    right:0.3125rem;
 }
 
 .info-button__text--transform{

@@ -20,12 +20,12 @@ h3{
     justify-content:center;
     align-items:center;
     color:#fff;
-    border: 5px solid #5BACC3;
+    border: 0.3125rem solid #5BACC3;
     width:18.75rem;
     height:12.5rem;
     position:relative;
-    top:185px;
-    right:16px;
+    top:11.5625rem;
+    right:1rem;
 }
 .hero-image__title--graphite{
     width:18.75rem;
@@ -45,9 +45,9 @@ h3{
 }
 
 .navbar__item{    
-    padding: 2px 16px;
-    margin: 15px 0;
-    border-left: 5px solid #5BACC3; 
+    padding: 0.125rem 1rem;
+    margin:0.9375rem 0;
+    border-left: 0.3125rem solid #5BACC3; 
 }
 
 .navbar__links{
@@ -65,7 +65,7 @@ h3{
 }
 
 .items__title{
-    padding:30px;
+    padding:1.875rem;
 }
 
 .items__description--italic{
