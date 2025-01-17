@@ -1,11 +1,5 @@
-h2{
-   font-size: 3.75rem;
-   font-weight:300; 
-}
 
 h3{
-    font-size:2.0625rem;
-    font-weight:300;
     text-align:center;
 }
 
@@ -25,8 +19,6 @@ h3{
     display:flex;
     justify-content:center;
     align-items:center;
-    font-size:3.75rem;
-    font-weight:300;
     color:#fff;
     border: 5px solid #5BACC3;
     width:18.75rem;
@@ -48,7 +40,8 @@ h3{
 }
 
 .navbar__list{
-    text-align:center; 
+    display:flex; 
+    justify-content:center;
 }
 
 .navbar__item{    
