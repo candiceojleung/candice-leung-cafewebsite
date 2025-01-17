@@ -162,21 +162,23 @@ footer{
     font-weight:700;
 }
 
+
 .background-icons{
-    display:flex;
-    justify-content:space-between;
-    width:7.5rem;
-    opacity:25%; 
+   display:flex;
+   justify-content:space-between;
 }
 
 .background-icons__left{
     position:relative;
     top:8.75rem;
     right:3.125rem;
-}
-
+    width:7.5rem;
+    opacity:25%;
+} 
 .background-icons__right{
     position:relative; 
     left:3.125rem;
     top:12.5rem;
+    width:7.5rem;
+    opacity:25%;
 }

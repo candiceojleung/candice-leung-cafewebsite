@@ -1,6 +1,7 @@
 * {
     box-sizing:border-box;
     margin:0;
+    padding:0;
 }
 
 body {
@@ -35,7 +36,7 @@ ul{
     display:flex; 
     align-items:baseline; 
 }
-.nav-left__icon--size, .social__icons--size,.content-material__icon{
+.nav-left__logo--size, .social__icons--size,.content-material__icon{
     width:3.125rem;
 }
 
@@ -53,7 +54,7 @@ ul{
     justify-content:flex-end;
 }
 
-.navheader__link{
+.nav-left__link{
     text-decoration:none;
     color:#393939
 }
