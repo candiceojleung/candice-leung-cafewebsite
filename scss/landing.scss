@@ -134,10 +134,9 @@ footer{
     z-index:2
 }
 
-.content-images__background:hover .content-images__can{
+.content-images:hover .content-images__can{
     animation: spin 2s infinite; 
-
-
+}
 
 .content-images__border{
     border:5px solid #5BACC3;
