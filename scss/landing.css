@@ -142,13 +142,12 @@ footer {
   background-color: #FFF0ED;
 }
 
-.header-left {
+.header-intro {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-
-.header-left__description {
+.header-intro__description {
   width: 38%;
 }
 
@@ -161,14 +160,12 @@ footer {
   align-items: center;
   gap: 3.125rem;
 }
-
 .product__cards {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-
 .product__card {
   width: 20.625rem;
   height: 27.5rem;
@@ -183,8 +180,7 @@ footer {
   display: flex;
   justify-content: center;
 }
-
-.top-card__image, .images__img {
+.top-card__image {
   height: 17.5rem;
   padding: 1.25rem;
   margin: 1.25rem;
@@ -196,28 +192,23 @@ footer {
   align-items: center;
   padding-top: 20px;
 }
-
 .bottom-card__left {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: left;
 }
-
 .bottom-card__right {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .bottom-card__name {
   padding-bottom: 0;
 }
-
 .bottom-card__quantity {
   color: #909090;
 }
-
 .bottom-card__pricing--color {
   font-size: 2.0625rem;
   font-weight: bold;
@@ -238,32 +229,28 @@ footer {
   gap: 2rem;
   width: 25%;
 }
-
 .content-material__icons {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
 
+:hover .content-images__can--animate {
+  animation: spin 2s infinite;
+}
 .content-images__background {
   width: 25rem;
   position: relative;
   top: 11.25rem;
   right: 3.75rem;
 }
-
-.content-images__can {
+.content-images__can--animate {
   height: 17.5rem;
   position: relative;
   left: 12.5rem;
   top: 6.25rem;
   z-index: 2;
 }
-
-.content-images:hover .content-images__can {
-  animation: spin 2s infinite;
-}
-
 .content-images__border {
   border: 5px solid #5BACC3;
   width: 25rem;
@@ -277,7 +264,6 @@ footer {
   display: flex;
   justify-content: center;
 }
-
 .discount__description {
   display: flex;
   flex-wrap: wrap;
@@ -292,7 +278,7 @@ footer {
   animation: banner-change 2.5s infinite alternate;
 }
 
-.discount .discount__description--bold, .hours .hours__day--bold {
+.discount__description--bold, .hours__day--bold {
   font-weight: 700;
 }
 
@@ -300,7 +286,6 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-
 .background-icons__left {
   position: relative;
   top: 8.75rem;
@@ -308,7 +293,6 @@ footer {
   width: 7.5rem;
   opacity: 25%;
 }
-
 .background-icons__right {
   position: relative;
   left: 3.125rem;
