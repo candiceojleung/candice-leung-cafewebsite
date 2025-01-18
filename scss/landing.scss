@@ -1,42 +1,37 @@
 @use './partials/global' as *;
-@use './partials/keyframes' as*;
+@use './partials/keyframes' as *;
+@use './partials/variables' as *;
+@use './partials/mixins' as *;
 
 footer{
-    display: flex;
-    justify-content:space-evenly;
+    @include display (space-evenly);
     padding:3.125rem;
-    background-color:#FFF0ED;
+    background-color:$primary-background;
 } 
 
 .header{
-    display:flex;
-    justify-content:space-evenly;
-    align-items:center;
-    background-color:#FFF0ED;
+    @include flex (space-evenly, center);
+    background-color:$primary-background;
 }
 
 .header-intro{
-    display:flex;
-    flex-direction:column;
+    @include flex (flex-start,stretch,column);
     gap:2rem;
     &__description{
         width:38%;
-}
+    }
 }
 
 .product{
-    background-color:#F7F7F7;
+    @include flex (center,center,column);
+    background-color:$second-background;
     padding-top:3.125rem;
     padding-bottom:3.125rem;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
     gap:3.125rem;
 
     &__cards{
         width:100%;
-        display:flex;
-        justify-content:space-evenly;
+        @include display(space-evenly);
         flex-wrap:wrap;
     }
 
@@ -45,15 +40,14 @@ footer{
         height:27.5rem;  
         box-shadow:0 0.3125rem 90.5625rem 0.0625rem rgba(0, 0, 0, 0.25);
         border-radius:0.625rem;    
-        background-color:#FFF0ED;
+        background-color:$primary-background;
     }
 }
  
 .top-card{
-    background-color:#FFF;
+    background-color:$white;
     border-radius:0.625rem;
-    display:flex;
-    justify-content:center;
+   @include display(center);
     &__image{
         height:17.5rem;
         padding:1.25rem;
@@ -62,50 +56,39 @@ footer{
 }
 
 .bottom-card{
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
+    @include flex (space-around,center);
     padding-top:20px;
     &__left{
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        text-align:left;
+        @include flex(center,stretch,column);
     }
     &__right{
-        display:flex; 
-        justify-content:center;
-        align-items:center;
+        @include flex(center,center)
     }
     &__name{
         padding-bottom:0;
     }
     &__quantity{
-        color:#909090
+        color:$font-color;
     }
     &__pricing--color{
-        font-size:2.0625rem;
-        font-weight:bold;
+        font: {
+            size:$font-medium;
+            weight:$weight-bold;
+        }
         padding:0;
     }
 }
 
 .content{
-    display:flex; 
-    justify-content:space-evenly;
-    align-items:center;
+    @include flex (space-evenly,center);
 }
 
 .content-material{
-    display:flex;
-    flex-direction:column;
-    justify-content:space-evenly;
+    @include flex(space-evenly,stretch,column);
     gap:2rem;
     width:25%;
     &__icons{
-        display:flex; 
-        align-items:flex-start;
-        justify-content:space-between;
+        @include display(space-between);
     }
 }
 
@@ -124,7 +107,7 @@ footer{
         z-index:2
     }
     &__border{
-        border:5px solid #5BACC3;
+        border:0.3125rem solid $secondary-color;
         width:25rem;
         height:25rem;
         position:relative; 
@@ -138,17 +121,17 @@ footer{
     }
 
 .discount{
-    display:flex;
-    justify-content:center;
+    @include display (center);
     &__description{
-        display:flex;
+        @include display(center);
         flex-wrap:wrap;
-        justify-content:center;
         width:90%;
-        font-size:2.8125rem;
-        font-weight:400;
-        background-color:#393939; 
-        color:#fff; 
+        font: {
+            size:$discount-text;
+            weight:$weight-regular;
+        }
+        background-color:$primary-color; 
+        color:$white; 
         padding: 3.125rem;
         margin-bottom:6.25rem;
         animation:banner-change 2.5s infinite alternate;
@@ -156,24 +139,24 @@ footer{
 }
 
 .discount__description--bold , .hours__day--bold{
-    font-weight:700;
+    font-weight:$weight-bold;
 }
 
 .background-icons{
-   display:flex;
-   justify-content:space-between;
+   @include display (space-between);
    &__left{
     position:relative;
     top:8.75rem;
     right:3.125rem;
-    width:7.5rem;
-    opacity:25%;
    } 
    &__right{
     position:relative; 
     left:3.125rem;
     top:12.5rem;
-    width:7.5rem;
-    opacity:25%;
    }
+}
+
+.background-icons__left, .background-icons__right{
+    opacity:25%;
+    width:7.5rem;
 }

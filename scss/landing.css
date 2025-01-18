@@ -4,17 +4,16 @@
   padding: 0;
 }
 
+p {
+  font-size: 1.125rem;
+}
+
 body {
   font-family: "Open Sans";
   font-weight: 400;
 }
 
-h1 {
-  font-size: 3.75rem;
-  font-weight: 300;
-}
-
-h2 {
+h1, h2 {
   font-size: 3.75rem;
   font-weight: 300;
 }
@@ -28,13 +27,15 @@ ul {
   list-style: none;
 }
 
-.navheader__link, .navheader__links:visited {
-  color: #393939;
-}
-
 .nav-logo {
   display: flex;
+  justify-content: flex-start;
   align-items: baseline;
+  flex-direction: row;
+}
+.nav-logo__title--color {
+  text-decoration: none;
+  color: #393939;
 }
 
 .nav-logo__icon--size, .social__icons--size, .content-material__icon {
@@ -47,18 +48,13 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
 .navheader__list {
   display: flex;
   justify-content: flex-end;
 }
-
-.navheader .nav-logo__title--color {
-  text-decoration: none;
-  color: #393939;
-}
-
-.navheader__links, .navheader__links--blue {
+.navheader__links, .navheader__links--color {
   font-size: 1.3125rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -66,8 +62,10 @@ ul {
   margin: 2rem;
   color: #393939;
 }
-
-.navheader .navheader__links--blue {
+.navheader__links:visited, .navheader__links--color:visited {
+  color: #393939;
+}
+.navheader__links--color:visited {
   color: #5BACC3;
 }
 
@@ -85,29 +83,26 @@ ul {
   text-align: center;
   background-color: #5BACC3;
 }
-
 .info-button__text {
-  text-align: center;
-  padding-top: 10px;
-  border: 0.125rem solid black;
   height: 3.125rem;
   width: 11.25rem;
+  text-align: center;
+  padding-top: 10px;
+  border: 0.125rem solid #000;
   position: relative;
   bottom: 3.4375rem;
   right: 0.3125rem;
 }
-
 .info-button__text:active {
   position: relative;
   bottom: 3.125rem;
   right: 0;
 }
-
 .info-button__text--transform {
   font-size: 1.125rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: #fff;
+  color: #FFF;
 }
 
 @keyframes banner-change {
@@ -137,11 +132,14 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: row;
   background-color: #FFF0ED;
 }
 
 .header-intro {
   display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
   flex-direction: column;
   gap: 2rem;
 }
@@ -150,12 +148,13 @@ footer {
 }
 
 .product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: #F7F7F7;
   padding-top: 3.125rem;
   padding-bottom: 3.125rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 3.125rem;
 }
 .product__cards {
@@ -188,18 +187,20 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: row;
   padding-top: 20px;
 }
 .bottom-card__left {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  text-align: left;
+  align-items: stretch;
+  flex-direction: column;
 }
 .bottom-card__right {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 .bottom-card__name {
   padding-bottom: 0;
@@ -209,7 +210,7 @@ footer {
 }
 .bottom-card__pricing--color {
   font-size: 2.0625rem;
-  font-weight: bold;
+  font-weight: 700;
   padding: 0;
 }
 
@@ -217,18 +218,19 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: row;
 }
 
 .content-material {
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
+  align-items: stretch;
+  flex-direction: column;
   gap: 2rem;
   width: 25%;
 }
 .content-material__icons {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -246,7 +248,7 @@ footer {
   z-index: 2;
 }
 .content-images__border {
-  border: 5px solid #5BACC3;
+  border: 0.3125rem solid #5BACC3;
   width: 25rem;
   height: 25rem;
   position: relative;
@@ -264,13 +266,13 @@ footer {
 }
 .discount__description {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   width: 90%;
   font-size: 2.8125rem;
   font-weight: 400;
   background-color: #393939;
-  color: #fff;
+  color: #FFF;
   padding: 3.125rem;
   margin-bottom: 6.25rem;
   animation: banner-change 2.5s infinite alternate;
@@ -288,13 +290,14 @@ footer {
   position: relative;
   top: 8.75rem;
   right: 3.125rem;
-  width: 7.5rem;
-  opacity: 25%;
 }
 .background-icons__right {
   position: relative;
   left: 3.125rem;
   top: 12.5rem;
-  width: 7.5rem;
+}
+
+.background-icons__left, .background-icons__right {
   opacity: 25%;
+  width: 7.5rem;
 }/*# sourceMappingURL=landing.css.map */

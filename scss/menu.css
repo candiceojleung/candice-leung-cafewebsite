@@ -4,17 +4,16 @@
   padding: 0;
 }
 
+p {
+  font-size: 1.125rem;
+}
+
 body {
   font-family: "Open Sans";
   font-weight: 400;
 }
 
-h1 {
-  font-size: 3.75rem;
-  font-weight: 300;
-}
-
-h2 {
+h1, h2 {
   font-size: 3.75rem;
   font-weight: 300;
 }
@@ -28,13 +27,15 @@ ul {
   list-style: none;
 }
 
-.navheader__link, .navheader__links:visited {
-  color: #393939;
-}
-
 .nav-logo {
   display: flex;
+  justify-content: flex-start;
   align-items: baseline;
+  flex-direction: row;
+}
+.nav-logo__title--color {
+  text-decoration: none;
+  color: #393939;
 }
 
 .nav-logo__icon--size, .social__icons--size, .content-material__icon {
@@ -47,18 +48,13 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
 .navheader__list {
   display: flex;
   justify-content: flex-end;
 }
-
-.navheader .nav-logo__title--color {
-  text-decoration: none;
-  color: #393939;
-}
-
-.navheader__links, .navheader__links--blue {
+.navheader__links, .navheader__links--color {
   font-size: 1.3125rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -66,8 +62,10 @@ ul {
   margin: 2rem;
   color: #393939;
 }
-
-.navheader .navheader__links--blue {
+.navheader__links:visited, .navheader__links--color:visited {
+  color: #393939;
+}
+.navheader__links--color:visited {
   color: #5BACC3;
 }
 
@@ -85,29 +83,26 @@ ul {
   text-align: center;
   background-color: #5BACC3;
 }
-
 .info-button__text {
-  text-align: center;
-  padding-top: 10px;
-  border: 0.125rem solid black;
   height: 3.125rem;
   width: 11.25rem;
+  text-align: center;
+  padding-top: 10px;
+  border: 0.125rem solid #000;
   position: relative;
   bottom: 3.4375rem;
   right: 0.3125rem;
 }
-
 .info-button__text:active {
   position: relative;
   bottom: 3.125rem;
   right: 0;
 }
-
 .info-button__text--transform {
   font-size: 1.125rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: #fff;
+  color: #FFF;
 }
 
 h3 {
@@ -116,20 +111,21 @@ h3 {
 
 .hero-image {
   background-image: url("../assets/images/coffee-circle.jpg");
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 43.75rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 43.75rem;
 }
 .hero-image__title {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  flex-direction: row;
   color: #FFF;
   border: 0.3125rem solid #5BACC3;
   width: 18.75rem;
@@ -141,8 +137,8 @@ h3 {
   height: 12.5rem;
   background-color: #393939;
   position: relative;
-  top: 215px;
-  left: 15px;
+  top: 13.4375rem;
+  left: 0.9375rem;
 }
 
 .navbar {
@@ -179,7 +175,6 @@ h3 {
   font-size: 1.125rem;
   font-weight: 400;
   font-style: italic;
-  display: flex;
   text-align: center;
   width: 31.25rem;
   margin: auto;
