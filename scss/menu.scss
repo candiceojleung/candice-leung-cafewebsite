@@ -15,69 +15,64 @@ h3{
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
-}
-
-.hero-image__title{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:#fff;
-    border: 0.3125rem solid #5BACC3;
-    width:18.75rem;
-    height:12.5rem;
-    position:relative;
-    top:11.5625rem;
-    right:1rem;
-}
-.hero-image__title--graphite{
-    width:18.75rem;
-    height:12.5rem;
-    background-color:#393939;
+    &__title{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        color:#FFF;
+        border: 0.3125rem solid #5BACC3;
+        width:18.75rem;
+        height:12.5rem;
+        z-index:2;
+        &--graphite{
+            width:18.75rem;
+            height:12.5rem;
+            background-color:#393939;
+            position:relative;
+            top:215px;
+            left:15px;
+        }
+    }
 }
 
 .navbar{
     color:#FFF;
     background-color:#393939;
     width:100%;
+    &__list{
+        display:flex; 
+        justify-content:center;
+    }
+    &__item{    
+        padding: 0.125rem 1rem;
+        margin:0.9375rem 0;
+        border-left: 0.3125rem solid #5BACC3; 
+    }
+    &__links{
+        font-size:1.3125rem;
+        font-weight:400;
+        text-transform:uppercase;
+        text-decoration:none;
+        color:#FFF;
+    }
 }
-
-.navbar__list{
-    display:flex; 
-    justify-content:center;
-}
-
-.navbar__item{    
-    padding: 0.125rem 1rem;
-    margin:0.9375rem 0;
-    border-left: 0.3125rem solid #5BACC3; 
-}
-
-.navbar__links{
-    font-size:1.3125rem;
-    font-weight:400;
-    text-transform:uppercase;
-    text-decoration:none;
-    color:#FFF;
-}
-
 .items{
     background-color:#FFF0ED;
     margin:auto;
     text-align:center;
-}
-
-.items__title{
-    padding:1.875rem;
-}
-
-.items__description--italic{
-    font-size:1.125rem;
-    font-weight:400;
-    font-style:italic;
-    display:flex;
-    text-align:center;
-    width:31.25rem;
-    margin:auto;
+    &__title{
+        padding:1.875rem;
+    }
+    &__description--italic{
+        font-size:1.125rem;
+        font-weight:400;
+        font-style:italic;
+        display:flex;
+        text-align:center;
+        width:31.25rem;
+        margin:auto;
+    }
 }
 
 .cold{

@@ -32,11 +32,11 @@ ul{
     color:#393939;
 }
 
-.nav-left{
+.nav-logo{
     display:flex; 
     align-items:baseline; 
 }
-.nav-left__logo--size, .social__icons--size,.content-material__icon{
+.nav-logo__icon--size, .social__icons--size,.content-material__icon{
     width:3.125rem;
 }
 
@@ -46,14 +46,14 @@ ul{
     display:flex; 
     justify-content: space-between;
     align-items:center; 
+    &__list{
+        display:flex;  
+        justify-content:flex-end;
+    }
 }
 
-.navheader__list{
-    display:flex;  
-    justify-content:flex-end;
-}
-
-.nav-left__link{
+.navheader
+.nav-logo__title--color{
     text-decoration:none;
     color:#393939
 }
@@ -86,9 +86,8 @@ ul{
 }
 
 .info-button__text{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    text-align:center;
+    padding-top:10px;
     border: 0.125rem solid black;
     height:3.125rem;
     width:11.25rem;
