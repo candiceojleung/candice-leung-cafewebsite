@@ -125,9 +125,6 @@ footer{
     right:3.75rem;
 }
 
-.content-images__background:hover .content-images__can{
-    animation: spin 2s infinite; 
-}
 
 .content-images__can{
     height:17.5rem;
@@ -136,9 +133,10 @@ footer{
     top:6.25rem;
     z-index:2
 }
-.content-images__can:hover{
+
+.content-images__background:hover .content-images__can{
     animation: spin 2s infinite; 
-}
+
 
 
 .content-images__border{
