@@ -46,7 +46,7 @@ ul{
     }
 }
 .nav-logo__icon--size, .social__icons--size,.content-material__icon{
-    width:$icon-width; 
+    width:3.125rem; 
 }
 
 .navheader{
@@ -97,11 +97,10 @@ ul{
     background-color:$secondary-color;
     }
     &__text{
-    height:3.125rem;
-    width:11.25rem;
-    text-align:center;
+    @extend .info-button__background;
+    background-color:transparent;
     padding-top:10px;
-    border: 0.125rem solid $black;
+    border: 0.125rem solid black;
     position:relative; 
     bottom:3.4375rem; 
     right:0.3125rem;

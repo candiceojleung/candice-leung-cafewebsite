@@ -77,18 +77,16 @@ ul {
   padding-bottom: 1.5625rem;
 }
 
-.info-button__background {
+.info-button__background, .info-button__text {
   height: 3.125rem;
   width: 11.25rem;
   text-align: center;
   background-color: #5BACC3;
 }
 .info-button__text {
-  height: 3.125rem;
-  width: 11.25rem;
-  text-align: center;
+  background-color: transparent;
   padding-top: 10px;
-  border: 0.125rem solid #000;
+  border: 0.125rem solid black;
   position: relative;
   bottom: 3.4375rem;
   right: 0.3125rem;

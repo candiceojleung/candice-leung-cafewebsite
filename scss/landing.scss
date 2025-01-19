@@ -68,7 +68,7 @@ footer{
         padding-bottom:0;
     }
     &__quantity{
-        color:$font-color;
+        color:$tertiary-color;
     }
     &__pricing--color{
         font: {
@@ -127,7 +127,7 @@ footer{
         flex-wrap:wrap;
         width:90%;
         font: {
-            size:$discount-text;
+            size:2.8125rem;
             weight:$weight-regular;
         }
         background-color:$primary-color; 
