@@ -2,15 +2,10 @@
 @use './variables' as*;
 @use './mixins' as*;
 
-
 * {
     box-sizing:border-box;
     margin:0;
     padding:0;
-}
-
-p{
-    font-size:$font-regular;
 }
 
 body {
@@ -79,16 +74,6 @@ ul{
     }
 }
 
-.bottom-card__pricing--color , .items__pricing--color{
-    text-align:center;
-    font: {
-        size:$font-regular;
-        weight:$weight-regular;
-    }
-    color:$secondary-color;
-    padding-bottom:1.5625rem;
-}
-
 .info-button{
     &__background{
     height:3.125rem;
@@ -100,7 +85,7 @@ ul{
     @extend .info-button__background;
     background-color:transparent;
     padding-top:10px;
-    border: 0.125rem solid black;
+    border: 0.125rem solid $primary-color;
     position:relative; 
     bottom:3.4375rem; 
     right:0.3125rem;

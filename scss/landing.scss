@@ -58,24 +58,24 @@ footer{
 .bottom-card{
     @include flex (space-around,center);
     padding-top:20px;
-    &__left{
+    &__info{
         @include flex(center,stretch,column);
-    }
-    &__right{
-        @include flex(center,center)
-    }
+    } 
     &__name{
         padding-bottom:0;
     }
     &__quantity{
         color:$tertiary-color;
     }
-    &__pricing--color{
-        font: {
-            size:$font-medium;
-            weight:$weight-bold;
+    &__price{
+        @include flex(center,center);
+        &--color{
+            color:$secondary-color;
+            font: {
+                size:$font-medium;
+                weight:$weight-bold;
+            }
         }
-        padding:0;
     }
 }
 
@@ -126,15 +126,15 @@ footer{
         @include display(center);
         flex-wrap:wrap;
         width:90%;
-        font: {
-            size:2.8125rem;
-            weight:$weight-regular;
-        }
         background-color:$primary-color; 
         color:$white; 
         padding: 3.125rem;
         margin-bottom:6.25rem;
         animation:banner-change 2.5s infinite alternate;
+        font: {
+            size:2.8125rem;
+            weight:$weight-regular;
+        }
     }
 }
 

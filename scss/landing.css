@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-p {
-  font-size: 1.125rem;
-}
-
 body {
   font-family: "Open Sans";
   font-weight: 400;
@@ -69,14 +65,6 @@ ul {
   color: #5BACC3;
 }
 
-.bottom-card__pricing--color, .items__pricing--color {
-  text-align: center;
-  font-size: 1.125rem;
-  font-weight: 400;
-  color: #5BACC3;
-  padding-bottom: 1.5625rem;
-}
-
 .info-button__background, .info-button__text {
   height: 3.125rem;
   width: 11.25rem;
@@ -86,7 +74,7 @@ ul {
 .info-button__text {
   background-color: transparent;
   padding-top: 10px;
-  border: 0.125rem solid black;
+  border: 0.125rem solid #393939;
   position: relative;
   bottom: 3.4375rem;
   right: 0.3125rem;
@@ -188,17 +176,11 @@ footer {
   flex-direction: row;
   padding-top: 20px;
 }
-.bottom-card__left {
+.bottom-card__info {
   display: flex;
   justify-content: center;
   align-items: stretch;
   flex-direction: column;
-}
-.bottom-card__right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
 }
 .bottom-card__name {
   padding-bottom: 0;
@@ -206,10 +188,16 @@ footer {
 .bottom-card__quantity {
   color: #909090;
 }
-.bottom-card__pricing--color {
+.bottom-card__price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.bottom-card__price--color {
+  color: #5BACC3;
   font-size: 2.0625rem;
   font-weight: 700;
-  padding: 0;
 }
 
 .content {
@@ -267,13 +255,13 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
   width: 90%;
-  font-size: 2.8125rem;
-  font-weight: 400;
   background-color: #393939;
   color: #FFF;
   padding: 3.125rem;
   margin-bottom: 6.25rem;
   animation: banner-change 2.5s infinite alternate;
+  font-size: 2.8125rem;
+  font-weight: 400;
 }
 
 .discount__description--bold, .hours__day--bold {
