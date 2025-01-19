@@ -71,10 +71,8 @@ footer{
         @include flex(center,center);
         &--color{
             color:$secondary-color;
-            font: {
-                size:$font-medium;
-                weight:$weight-bold;
-            }
+            font-size:$font-medium;
+            font-weight:$weight-bold;
         }
     }
 }

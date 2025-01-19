@@ -19,6 +19,10 @@ h3 {
   font-weight: 300;
 }
 
+p {
+  font-size: 1.125rem;
+}
+
 ul {
   list-style: none;
 }
@@ -58,10 +62,7 @@ ul {
   margin: 2rem;
   color: #393939;
 }
-.navheader__links:visited, .navheader__links--color:visited {
-  color: #393939;
-}
-.navheader__links--color:visited {
+.navheader__links--color {
   color: #5BACC3;
 }
 
@@ -72,8 +73,9 @@ ul {
   background-color: #5BACC3;
 }
 .info-button__text {
+  font-size: 1.3125rem;
   background-color: transparent;
-  padding-top: 10px;
+  padding: 10px;
   border: 0.125rem solid #393939;
   position: relative;
   bottom: 3.4375rem;
@@ -85,10 +87,9 @@ ul {
   right: 0;
 }
 .info-button__text--transform {
-  font-size: 1.125rem;
+  color: #FFF;
   text-transform: uppercase;
   text-decoration: none;
-  color: #FFF;
 }
 
 h3 {
@@ -139,7 +140,7 @@ h3 {
 .navbar__item {
   padding: 0.125rem 1rem;
   margin: 0.9375rem 0;
-  border-left: 0.3125rem solid #5BACC3;
+  border-left: 0.25rem solid #5BACC3;
 }
 .navbar__links {
   color: #FFF;

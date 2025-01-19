@@ -29,6 +29,10 @@ h3{
     }
 }
 
+p {
+    font-size: $font-regular;
+}
+
 ul{
     list-style:none;
 }
@@ -62,14 +66,9 @@ ul{
         }
         margin:2rem;
         color:$primary-color;
-        &:visited{
-            color:$primary-color;
-        }
         &--color{
-        @extend .navheader__links;
-            &:visited{
-            color:$secondary-color;
-            }
+            @extend .navheader__links;
+            color: $secondary-color;
         } 
     }
 }
@@ -83,8 +82,9 @@ ul{
     }
     &__text{
     @extend .info-button__background;
+    font-size:$nav-link;
     background-color:transparent;
-    padding-top:10px;
+    padding:10px;
     border: 0.125rem solid $primary-color;
     position:relative; 
     bottom:3.4375rem; 
@@ -95,12 +95,9 @@ ul{
         right:0;
         }
         &--transform{
-        font-size:1.125rem;
-        text: {
-            transform:$upper-transform; 
-            decoration:none; 
-        }
-        color:$white;
+            color:$white;
+            text-transform:$upper-transform; 
+            text-decoration:none;
         }
     }
 }
