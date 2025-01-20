@@ -68,7 +68,6 @@ h3{
     }
     &__description--italic{
         font: {
-            size:$font-regular;
             weight:$weight-regular;
             style:$font-italic;
         }
@@ -80,9 +79,7 @@ h3{
         text-align:center;
         color:$secondary-color;
         padding-bottom:1.5625rem;
-        font: {
-            size:$font-regular;
-            weight:$weight-regular;
+        font-weight:$weight-regular;
         }
     }
 }
